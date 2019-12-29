@@ -7,6 +7,9 @@ before_install:
   - npm i -g npm
   - npm i -g firebase-tools
 
+script:
+  - echo "No build required"
+
 deploy:
   - provider: script
     script: bash -c "npx firebase deploy --only hosting"
